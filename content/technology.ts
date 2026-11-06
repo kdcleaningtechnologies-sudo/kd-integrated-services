@@ -11,10 +11,10 @@ export interface TechCapability {
 
 export const technologyData = {
   headline: "Technology-Powered Facility Management",
-  subheadline: "We don't just supply manpower. Through our specialized engineering division — KD Cleaning Technologies — we deploy IoT sensors, autonomous robotics, pure-water systems, and real-time operational software that elevate facility hygiene beyond conventional manual contractor limits.",
-  techArmName: "KD Cleaning Technologies",
-  techArmUrl: "https://kdcleaningtechnologies.com/",
-  techArmDescription: "KD Cleaning Technologies serves as our internal R&D and specialized equipment arm. It manufactures, imports, and maintains cutting-edge pure-water systems, high-altitude façade wash drones, and digital inspection IoT software, giving our clients access to enterprise-grade tools without heavy capital expense.",
+  subheadline: "We don't just supply manpower. Through our specialized engineering division — KD Integrated Services — we deploy IoT sensors, autonomous robotics, pure-water systems, and real-time operational software that elevate facility hygiene beyond conventional manual contractor limits.",
+  techArmName: "KD Integrated Services — Tech & Robotics",
+  techArmUrl: "/technology",
+  techArmDescription: "KD Integrated Services deploys cutting-edge pure-water filtration systems, high-altitude façade wash drones, and digital inspection IoT software, giving our clients access to enterprise-grade tools without heavy capital expense.",
   capabilities: [
     {
       id: "drone-facade",

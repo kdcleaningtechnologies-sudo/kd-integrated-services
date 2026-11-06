@@ -102,9 +102,9 @@ export const Header: React.FC = () => {
       }`}
     >
       {/* Top micro-bar for corporate trust */}
-      <div className="bg-navy-950 text-slate-300 text-[11px] py-1.5 px-4 hidden md:block border-b border-navy-900">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-4">
+      <div className="bg-navy-950 text-slate-300 text-[11px] py-1.5 px-4 border-b border-navy-900 overflow-x-auto scrollbar-none">
+        <div className="max-w-7xl mx-auto flex items-center justify-between min-w-max md:min-w-0 gap-4">
+          <div className="flex items-center gap-3 sm:gap-4 flex-shrink-0">
             <span className="flex items-center gap-1 text-slate-300">
               <CheckCircle2 className="w-3.5 h-3.5 text-brandcyan-400" />
               PASARA & EPFO/ESIC Compliant

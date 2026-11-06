@@ -12,7 +12,7 @@ import { socialMetadata } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Facility Management Services in Gurgaon & Delhi NCR",
   description:
-    "Browse KD Facilities Management Services: housekeeping, PASARA security, MEP maintenance, pest control, drone façade cleaning, and specialised treatments across Gurugram and Delhi NCR.",
+    "Browse KD Integrated Services: housekeeping, PASARA security, MEP maintenance, pest control, drone façade cleaning, and specialised treatments across Gurugram and Delhi NCR.",
   keywords: [
     "Facility Management Services Gurgaon",
     "Facility Management Services Gurugram",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Technical Facility Services Gurgaon",
   ],
   ...socialMetadata("/services", {
-    title: "Facility Management Services in Gurgaon & Delhi NCR | KD Facilities Management Services",
+    title: "Facility Management Services in Gurgaon & Delhi NCR | KD Integrated Services",
     description:
       "One vendor for housekeeping, security, MEP, pest control, and specialised facility services across Gurugram and Delhi NCR.",
   }),

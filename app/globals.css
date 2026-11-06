@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --primary-navy: #0B192C;
-  --accent-green: #10B981;
+  --primary-navy: #071426;
+  --secondary-navy: #0B1930;
+  --card-navy: #111F33;
+  --electric-blue: #087BFF;
+  --brand-cyan: #00C8E8;
+  --brand-teal: #00D6B5;
+  --accent-green: #00D6B5;
 }
 
 html {
@@ -39,7 +44,7 @@ body {
 
 /* Gradient Utilities Matching Official KD Logo */
 .text-gradient-brand {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#0066FF] via-[#0099FF] to-[#00D2B4];
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#087BFF] via-[#00C8E8] to-[#00D6B5];
 }
 
 .text-gradient-brand-light {
@@ -55,15 +60,15 @@ body {
 }
 
 .bg-brand-gradient {
-  background: linear-gradient(135deg, #0066FF 0%, #0099FF 50%, #00D2B4 100%);
+  background: linear-gradient(135deg, #087BFF 0%, #00C8E8 50%, #00D6B5 100%);
 }
 
 .bg-brand-gradient-hover {
-  background: linear-gradient(135deg, #0052D4 0%, #0080FF 50%, #00B89E 100%);
+  background: linear-gradient(135deg, #0066FF 0%, #00C8E8 50%, #00D6B5 100%);
 }
 
 .bg-hero-gradient {
-  background: radial-gradient(circle at 50% -20%, #0052D4 0%, #0B192C 45%, #060F1D 100%);
+  background: radial-gradient(circle at 50% -20%, #087BFF 0%, #0B1930 45%, #071426 100%);
 }
 
 .bg-hero-glow {
@@ -91,7 +96,7 @@ body {
 }
 
 .btn-brand-primary {
-  @apply bg-gradient-to-r from-[#0066FF] via-[#0091FF] to-[#00D2B4] text-white font-bold transition-all shadow-lg hover:shadow-xl hover:shadow-brandblue-500/25 hover:brightness-105 active:scale-[0.99];
+  @apply bg-gradient-to-r from-[#087BFF] via-[#00C8E8] to-[#00D6B5] text-white font-bold transition-all shadow-lg hover:shadow-xl hover:shadow-brandblue-500/25 hover:brightness-105 active:scale-[0.99];
 }
 
 /* Operational Telemetry Keyframes */

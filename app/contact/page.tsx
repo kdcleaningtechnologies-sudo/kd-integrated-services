@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description:
     "Request a free facility assessment in Gurgaon or Delhi NCR. Visit HQ at 521, Sector 31, Gurgaon or Delhi office at C-134, Sarita Vihar, New Delhi 110076. Call +91 8796682266 or Marketing Head Vinod Singh at +91 8800883467.",
   keywords: [
-    "Contact KD Facilities Management Services",
+    "Contact KD Integrated Services",
     "Facility Management Gurgaon Office",
     "Facility Management Delhi Office Sarita Vihar",
     "Request Facility Audit Gurugram",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "Integrated Facility Management Contact",
   ],
   ...socialMetadata("/contact", {
-    title: "Contact KD Facilities Management Services | Gurgaon & Delhi Offices",
+    title: "Contact KD Integrated Services | Gurgaon & Delhi Offices",
     description:
       "Free on-site facility assessment. Gurgaon HQ: 521, Sector 31. Delhi office: C-134, Sarita Vihar, New Delhi 110076.",
   }),
@@ -246,7 +246,7 @@ export default function ContactPage() {
                   {/* Responsive Clean Map Frame */}
                   <div className="w-full h-60 border border-slate-300 bg-slate-200 relative flex items-center justify-center text-center p-4">
                     <iframe
-                      title="KD Facilities Management Services Gurgaon Location"
+                      title="KD Integrated Services Gurgaon Location"
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14030.589886361546!2d77.03960161868352!3d28.459746356770227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1858a74e6c07%3A0xb3663673c683b544!2sSector%2031%2C%20Gurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                       className="w-full h-full border-0 absolute inset-0"
                       loading="lazy"

@@ -98,7 +98,7 @@ export default function AdminTechnologyPage() {
     <div className="pb-20">
       <AdminHeader
         title="Robotics & Technology Fleet"
-        subtitle="Manage the 8 core technologies and KD Cleaning Technologies specialized equipment division."
+        subtitle="Manage the 8 core technologies and KD Integrated Services specialized equipment division."
         actions={
           <div className="flex items-center gap-2">
             <button
@@ -128,7 +128,7 @@ export default function AdminTechnologyPage() {
           </div>
         )}
 
-        {/* Section 1: KD Cleaning Technologies Division Info */}
+        {/* Section 1: KD Integrated Services Division Info */}
         <div className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-4">
           <div className="flex items-center justify-between pb-3 border-b border-slate-100">
             <div className="flex items-center gap-2">

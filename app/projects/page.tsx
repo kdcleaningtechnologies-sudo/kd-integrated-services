@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Corporate Security Deployments Delhi NCR",
   ],
   ...socialMetadata("/projects", {
-    title: "Projects & Case Studies | KD Facilities Management Services Gurgaon",
+    title: "Projects & Case Studies | KD Integrated Services Gurgaon",
     description:
       "Explore deployment archetypes and operational case studies demonstrating our SLA turnaround times, float-crew reserves, and mechanized transitions across Gurugram and Delhi NCR.",
   }),

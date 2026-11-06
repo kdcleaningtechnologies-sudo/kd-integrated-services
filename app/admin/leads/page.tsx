@@ -335,7 +335,7 @@ export default function AdminLeadsPage() {
                 <tbody className="divide-y divide-slate-100">
                   {filteredLeads.map((lead) => {
                     const cleanPhone = lead.phone.replace(/\D/g, "");
-                    const whatsappDirectUrl = `https://wa.me/${cleanPhone.length === 10 ? `91${cleanPhone}` : cleanPhone}?text=${encodeURIComponent(`Hello ${lead.name}, regarding your KD Facilities Management Services assessment inquiry...`)}`;
+                    const whatsappDirectUrl = `https://wa.me/${cleanPhone.length === 10 ? `91${cleanPhone}` : cleanPhone}?text=${encodeURIComponent(`Hello ${lead.name}, regarding your KD Integrated Services assessment inquiry...`)}`;
 
                     return (
                       <tr

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "integrated facility management Gurgaon",
   ],
   ...socialMetadata("/facility-management", {
-    title: "Integrated Facility Management (IFM) in Gurgaon & NCR | KD Facilities Management Services",
+    title: "Integrated Facility Management (IFM) in Gurgaon & NCR | KD Integrated Services",
     description: "Single-point IFM partner in Delhi NCR: corporate housekeeping, 24/7 PASARA security, and MEP engineering under one unified SLA.",
   }),
 };

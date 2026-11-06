@@ -16,7 +16,7 @@ export const defaultOgImage = {
   url: `${SITE_URL}/images/kd-hero-staff.png`,
   width: 1200,
   height: 630,
-  alt: "KD Facilities Management Services operations team for integrated facility management in Gurgaon and Delhi NCR",
+  alt: "KD Integrated Services operations team for integrated facility management in Gurgaon and Delhi NCR",
 };
 
 export function socialMetadata(

@@ -227,7 +227,7 @@ export default function AdminPartnersPage() {
                 <tbody className="divide-y divide-slate-100">
                   {filteredPartners.map((partner) => {
                     const cleanPhone = partner.phone?.replace(/\D/g, "") || "";
-                    const whatsappDirectUrl = `https://wa.me/${cleanPhone.length === 10 ? `91${cleanPhone}` : cleanPhone}?text=${encodeURIComponent(`Hello ${partner.partnerName}, regarding your KD Facilities Management Services Partner Registration...`)}`;
+                    const whatsappDirectUrl = `https://wa.me/${cleanPhone.length === 10 ? `91${cleanPhone}` : cleanPhone}?text=${encodeURIComponent(`Hello ${partner.partnerName}, regarding your KD Integrated Services Partner Registration...`)}`;
 
                     return (
                       <tr

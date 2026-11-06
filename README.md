@@ -1,7 +1,7 @@
-# KD Facilities Management Services — Production Marketing Website
+# KD Integrated Services — Production Marketing Website
 
 > **Integrated Facility Management. Smarter Operations.**  
-> High-performance Next.js 14 (App Router) + TypeScript + Tailwind CSS marketing platform for **KD Facilities Management Services** (with **KD Cleaning Technologies** engineering division).
+> High-performance Next.js 14 (App Router) + TypeScript + Tailwind CSS marketing platform for **KD Integrated Services** (with **KD Integrated Services** engineering division).
 
 ---
 
@@ -39,7 +39,7 @@ content/
 ├── company.ts       # Contact info, GST, EPFO/ESIC compliance, addresses, WhatsApp config
 ├── services.ts      # 4 main categories (Soft, Security, Hard FM, Specialised) & sub-services
 ├── industries.ts    # 8 industry sector playbooks with pain points, solutions, and SLAs
-├── technology.ts    # 8 core tech capabilities & KD Cleaning Technologies arm integration
+├── technology.ts    # 8 core tech capabilities & KD Integrated Services arm integration
 ├── packages.ts      # 3-tier AMC comparison matrix (Essential, Advantage, Enterprise)
 ├── process.ts       # 5-step onboarding workflow (01 to 05) & recurring contract terms
 ├── stats.ts         # 4 stat counters with operational disclaimer footnote
@@ -93,7 +93,7 @@ All city landing pages are driven dynamically via `app/[city]/page.tsx` and pre-
      state: "Karnataka",
      headline: "Integrated Facility Management for Bengaluru Tech Corridors",
      tagline: "Grade-A corporate housekeeping, 24/7 manned guarding, and critical data-center MEP engineering across Whitefield and Electronic City.",
-     seoTitle: "Facility Management Company in Bengaluru | KD Facilities Management Services",
+     seoTitle: "Facility Management Company in Bengaluru | KD Integrated Services",
      seoDescription: "Premier facility management services in Bengaluru. Corporate housekeeping, PASARA security, HVAC chiller operations, and drone facade cleaning.",
      primaryKeyword: "Facility Management Company in Bengaluru",
      secondaryKeywords: [
@@ -125,7 +125,7 @@ All city landing pages are driven dynamically via `app/[city]/page.tsx` and pre-
   Add the following environment variables to your `.env.local` or hosting provider:
   ```env
   RESEND_API_KEY=re_your_api_key_here
-  NOTIFICATION_EMAIL=operations@kdfmservices.com
+  NOTIFICATION_EMAIL=info@kdintegratedservices.com
   ```
   When configured, the API will automatically dispatch formatted HTML email alerts directly to your operations inbox.
 
@@ -138,7 +138,7 @@ The project is 100% Vercel-native and requires zero custom server configurations
 1. Push this repository to GitHub or GitLab:
    ```bash
    git add .
-   git commit -m "Production-ready KD Facilities Management Services marketing website"
+   git commit -m "Production-ready KD Integrated Services marketing website"
    git push origin main
    ```
 2. Log into [Vercel](https://vercel.com) and click **"Add New Project"**.
@@ -146,15 +146,15 @@ The project is 100% Vercel-native and requires zero custom server configurations
 4. Framework preset: **Next.js** (automatically detected).
 5. (Optional) Add Environment Variables:
    - `RESEND_API_KEY`: Your Resend API key for lead emails
-   - `NOTIFICATION_EMAIL`: `operations@kdfmservices.com`
+   - `NOTIFICATION_EMAIL`: `info@kdintegratedservices.com`
 6. Click **Deploy**. Vercel will run `npm run build` and publish your site with edge CDN caching and instant HTTPS!
 
 ---
 
 ## 🛡️ Statutory & Corporate Empanelment Credentials
 
-- **Entity:** KD Facilities Management Services
-- **Technology Arm:** KD Cleaning Technologies
+- **Entity:** KD INTEGRATED SERVICES PVT LTD
+- **Technology Arm:** KD Integrated Services
 - **GST:** 06AABCK1234F1Z5 (100% Tax Compliant, Input Tax Credit Eligible)
 - **EPFO & ESIC:** 100% on-time statutory remittances with challan proofs
 - **Guarding:** PASARA certified guarding framework

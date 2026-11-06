@@ -41,17 +41,17 @@ export async function sendBrevoEmail(
   const defaultNotificationEmail =
     process.env.BREVO_NOTIFICATION_EMAIL ||
     process.env.NOTIFICATION_EMAIL ||
-    "kdfacilitiesmanagementservices@gmail.com";
+    "info@kdintegratedservices.com";
 
   const senderEmail =
     options.senderEmail ||
     process.env.BREVO_SENDER_EMAIL ||
-    "kdfacilitiesmanagementservices@gmail.com";
+    "info@kdintegratedservices.com";
 
   const senderName =
     options.senderName ||
     process.env.BREVO_SENDER_NAME ||
-    "KD Facilities Management Services";
+    "KD INTEGRATED SERVICES PVT LTD";
 
   const recipients =
     options.to && options.to.length > 0

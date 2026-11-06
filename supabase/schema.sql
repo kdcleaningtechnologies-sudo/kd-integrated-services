@@ -1,5 +1,5 @@
 -- ==============================================================================
--- KD Facilities Management Services — Supabase PostgreSQL Schema
+-- KD Integrated Services — Supabase PostgreSQL Schema
 -- Run this script in the Supabase SQL Editor (https://supabase.com/dashboard/project/_/sql)
 -- ==============================================================================
 

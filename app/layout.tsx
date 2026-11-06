@@ -23,8 +23,8 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Facility Management Company in Gurgaon & Delhi NCR | KD Facilities Management Services",
-    template: "%s | KD Facilities Management Services",
+    default: "Facility Management Company in Gurgaon & Delhi NCR | KD Integrated Services",
+    template: "%s | KD Integrated Services",
   },
   description:
     "Integrated Facility Management (IFM) company in Gurgaon and Delhi NCR. Corporate housekeeping, 24/7 PASARA security, HVAC/MEP maintenance, and drone façade cleaning across Gurugram, New Delhi, Noida, Faridabad, and Manesar.",
@@ -64,14 +64,14 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: SITE_URL,
     siteName: companyInfo.name,
-    title: "KD Facilities Management Services — Integrated Facility Management in Gurgaon & Delhi NCR",
+    title: "KD Integrated Services — Integrated Facility Management in Gurgaon & Delhi NCR",
     description:
       "Single-point IFM partner for corporate offices, hospitals, industrial plants, and campuses. Offices in Sector 31 Gurgaon and C-134 Sarita Vihar, New Delhi.",
     images: [defaultOgImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: "KD Facilities Management Services — Integrated Facility Management",
+    title: "KD Integrated Services — Integrated Facility Management",
     description: "Housekeeping, PASARA security, MEP maintenance, and drone façade cleaning across Gurgaon and Delhi NCR.",
     images: [defaultOgImage.url],
   },

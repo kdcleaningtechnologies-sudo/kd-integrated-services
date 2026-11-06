@@ -54,7 +54,7 @@ export const citiesData: Record<string, CityData> = {
     faqs: [
       {
         question: "What facility management services does KD provide in Gurgaon?",
-        answer: "KD Facilities Management Services delivers end-to-end Integrated Facility Management (IFM) across Gurugram, including corporate housekeeping, mechanized deep scrubbing, PASARA-licensed 24/7 security guarding, MEP maintenance (HVAC, DG sets, HT/LT electrical), autonomous drone façade cleaning, and commercial pest control."
+        answer: "KD Integrated Services delivers end-to-end Integrated Facility Management (IFM) across Gurugram, including corporate housekeeping, mechanized deep scrubbing, PASARA-licensed 24/7 security guarding, MEP maintenance (HVAC, DG sets, HT/LT electrical), autonomous drone façade cleaning, and commercial pest control."
       },
       {
         question: "How quickly can KD deploy housekeeping and technical crews in Gurgaon?",

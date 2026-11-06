@@ -6,7 +6,7 @@ import { socialMetadata } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Commercial Broker & Channel Partner Program",
   description:
-    "Partner with KD Facilities Management Services: Earn recurring monthly referral commissions on corporate Annual Maintenance Contracts (AMCs) across Gurgaon, Delhi NCR, and Noida.",
+    "Partner with KD Integrated Services: Earn recurring monthly referral commissions on corporate Annual Maintenance Contracts (AMCs) across Gurgaon, Delhi NCR, and Noida.",
   keywords: [
     "Facility Management Referral Partner",
     "Commercial Real Estate Broker Partnership Gurgaon",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Corporate Channel Partner Program NCR",
   ],
   ...socialMetadata("/partner", {
-    title: "Commercial Broker & Channel Partner Program | KD Facilities Management Services",
+    title: "Commercial Broker & Channel Partner Program | KD Integrated Services",
     description: "Monetize your commercial client relationships with predictable recurring revenue on corporate facility contracts.",
   }),
 };

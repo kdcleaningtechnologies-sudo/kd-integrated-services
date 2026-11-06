@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "LEED IGBC Building Cleaning Compliance",
   ],
   ...socialMetadata("/sustainability", {
-    title: "Sustainability & ESG Facility Operations | KD Facilities Management Services",
+    title: "Sustainability & ESG Facility Operations | KD Integrated Services",
     description:
       "Eco-friendly facility management supporting corporate ESG & BRSR reporting. Zero-runoff pure water systems, Diversey green chemicals, and waste segregation across Gurgaon, Noida, and Delhi NCR.",
   }),
@@ -183,7 +183,7 @@ export default function SustainabilityPage() {
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-normal">
-                  Is your commercial tower applying for or maintaining LEED Platinum, Gold, or IGBC Green Building certification? KD Facilities Management Services supplies:
+                  Is your commercial tower applying for or maintaining LEED Platinum, Gold, or IGBC Green Building certification? KD Integrated Services supplies:
                 </p>
 
                 <div className="space-y-2 text-xs text-slate-300">

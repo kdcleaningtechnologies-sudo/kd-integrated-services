@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
         <h2 style="color: #0066FF; margin-bottom: 16px; border-bottom: 2px solid #00D2B4; padding-bottom: 8px;">
           New Channel Partner Registration
         </h2>
-        <p style="font-size: 14px; color: #475569;">A new commercial channel partner has applied to register with KD Facilities Management Services:</p>
+        <p style="font-size: 14px; color: #475569;">A new commercial channel partner has applied to register with KD Integrated Services:</p>
         <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px;">
           <tr><td style="padding: 6px 0; color: #64748b; width: 140px;"><strong>Partner Name:</strong></td><td style="color: #0f172a; font-weight: bold;">${body.partnerName}</td></tr>
           <tr><td style="padding: 6px 0; color: #64748b;"><strong>Company / Agency:</strong></td><td style="color: #0f172a;">${body.companyName || "Independent"}</td></tr>
@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
           <tr><td style="padding: 6px 0; color: #64748b;"><strong>Expected Deals / Notes:</strong></td><td style="color: #0f172a;">${body.notes || "None"}</td></tr>
         </table>
         <div style="margin-top: 20px; padding-top: 12px; border-top: 1px solid #e2e8f0; font-size: 12px; color: #94a3b8;">
-          Received at ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} IST • KD Facilities Management Services
+          Received at ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} IST • KD Integrated Services
         </div>
       </div>
     `;

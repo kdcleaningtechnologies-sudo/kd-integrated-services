@@ -23,18 +23,18 @@ import { socialMetadata } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "Facility Technology & Robotics",
   description:
-    "Explore KD Cleaning Technologies: autonomous drone façade washing, water-fed pure water systems, QR inspection loops, and biometric attendance across Gurugram, Delhi, and Noida.",
+    "Explore KD Integrated Services: autonomous drone façade washing, water-fed pure water systems, QR inspection loops, and biometric attendance across Gurugram, Delhi, and Noida.",
   keywords: [
     "Drone Facade Cleaning India",
     "Water-Fed Pole Cleaning Gurgaon",
     "QR Based Facility Inspection",
-    "KD Cleaning Technologies",
+    "KD Integrated Services",
     "Digital Facility Management Gurgaon",
   ],
   ...socialMetadata("/technology", {
-    title: "Facility Technology & Robotics | KD Facilities Management Services",
+    title: "Facility Technology & Robotics | KD Integrated Services",
     description:
-      "Explore KD Cleaning Technologies: autonomous drone façade washing, water-fed pure water systems, QR inspection loops, and biometric attendance across Gurugram, Delhi, and Noida.",
+      "Explore KD Integrated Services: autonomous drone façade washing, water-fed pure water systems, QR inspection loops, and biometric attendance across Gurugram, Delhi, and Noida.",
   }),
 };
 
@@ -82,7 +82,7 @@ export default function TechnologyPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline inline-flex items-center gap-1 font-bold"
-                title="Visit KD Cleaning Technologies Official Portal"
+                title="Explore KD Integrated Services Technology"
               >
                 {technologyData.techArmName} Engineering Division
                 <ExternalLink className="w-3 h-3 text-brandcyan-400" />
@@ -145,7 +145,7 @@ export default function TechnologyPage() {
                 align="left"
                 badge="Engineering & Robotics Division"
                 title={`Introducing ${technologyData.techArmName}`}
-                subtitle="The specialized innovation arm powering every KD Facilities Management Services site deployment."
+                subtitle="The specialized innovation arm powering every KD Integrated Services site deployment."
               />
 
               <p className="text-sm text-slate-700 leading-relaxed">
@@ -174,7 +174,7 @@ export default function TechnologyPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-xl btn-brand-primary text-xs font-bold shadow-md hover:shadow-lg"
                 >
-                  <span>Explore KD Cleaning Technologies Portal</span>
+                  <span>Explore KD Integrated Services Technology</span>
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
               </div>

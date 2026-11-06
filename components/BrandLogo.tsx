@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 interface BrandLogoProps {
-  variant?: "facilities" | "cleaning" | "icon-only" | "full-cleaning";
+  variant?: "facilities" | "integrated" | "cleaning" | "icon-only" | "full-cleaning";
   theme?: "light" | "dark" | "auto";
   size?: "sm" | "md" | "lg" | "xl";
   className?: string;
@@ -10,7 +10,7 @@ interface BrandLogoProps {
 }
 
 export const BrandLogo: React.FC<BrandLogoProps> = ({
-  variant = "facilities",
+  variant = "integrated",
   theme = "auto",
   size = "md",
   className = "",
@@ -43,7 +43,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       <div className={`inline-flex items-center flex-shrink-0 ${className}`}>
         <Image
           src={iconSrc}
-          alt="KD Facilities Management Services"
+          alt="KD Integrated Services"
           width={305}
           height={220}
           style={{ width: "auto" }}
@@ -54,8 +54,8 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     );
   }
 
-  // 2. Facilities Variant (Official KD Facilities Management Services logo)
-  if (variant === "facilities") {
+  // 2. Integrated / Primary Variant (Official KD Integrated Services logo)
+  if (variant === "facilities" || variant === "integrated") {
     let logoSrc: string;
     const imgWidth = 914;
     let imgHeight = 220;
@@ -71,7 +71,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       <div className={`inline-flex items-center flex-shrink-0 ${className} select-none`}>
         <Image
           src={logoSrc}
-          alt="KD Facilities Management Services"
+          alt="KD Integrated Services"
           width={imgWidth}
           height={imgHeight}
           style={{ width: "auto" }}
@@ -82,7 +82,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     );
   }
 
-  // 3. Cleaning Variant (KD Cleaning Technologies - Specialized Engineering & Robotics)
+  // 3. Engineering & Specialized Technology Variant
   const iconSrc = isDark
     ? "/images/kd-icon-dark.png"
     : "/images/kd-icon-transparent.png";
@@ -117,7 +117,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
     <div className={`inline-flex items-center gap-2.5 sm:gap-3 ${className} select-none`}>
       <Image
         src={iconSrc}
-        alt="KD Cleaning Technologies"
+        alt="KD Integrated Services"
         width={305}
         height={220}
         className={`${iconHeightClasses[size]} object-contain drop-shadow-sm`}
@@ -130,10 +130,10 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       <div className="flex flex-col justify-center">
         <div className="flex items-baseline gap-1.5 leading-none font-heading font-extrabold tracking-tight">
           <span className="bg-gradient-to-r from-[#0066FF] via-[#0099FF] to-[#00D2B4] bg-clip-text text-transparent uppercase">
-            CLEANING
+            INTEGRATED
           </span>
           <span className={`${secondaryColorClass} uppercase font-bold tracking-wider ${currentTextSize.secondary}`}>
-            TECHNOLOGIES
+            SERVICES
           </span>
         </div>
 
@@ -142,7 +142,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
 
         {showTagline && (
           <span className={`font-semibold uppercase ${isDark ? "text-cyan-300" : "text-[#00A3FF]"} ${currentTextSize.tagline} font-sans leading-none`}>
-            SMART SOLUTIONS <span className="text-[#00D2B4]">|</span> SPARKLING RESULTS
+            SMART SOLUTIONS <span className="text-[#00D2B4]">|</span> SPARKLING RESULTS <span className="text-[#00D2B4]">|</span> TRUSTED CARE
           </span>
         )}
       </div>

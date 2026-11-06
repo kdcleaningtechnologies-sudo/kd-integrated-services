@@ -258,7 +258,7 @@ export const servicesData: ServiceCategory[] = [
     badge: "Integrated Pest Management",
     headline: "Commercial Pest Control Services in Gurugram & Delhi NCR",
     description:
-      "Pest control as part of KD Facilities Management Services' integrated specialised offering. Scientific IPM programmes for corporate offices, retail, residential societies, hospitals, hospitality, F&B, warehouses, and industrial facilities across Gurugram and Delhi NCR.",
+      "Pest control as part of KD Integrated Services' integrated specialised offering. Scientific IPM programmes for corporate offices, retail, residential societies, hospitals, hospitality, F&B, warehouses, and industrial facilities across Gurugram and Delhi NCR.",
     subServices: [
       {
         id: "general-pest-control",

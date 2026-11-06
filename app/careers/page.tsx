@@ -191,8 +191,8 @@ export default function CareersPage() {
               </h3>
               <p className="text-xs text-slate-600 mt-1">
                 Looking for supervisory, technical, or facility management roles? Submit your details below or email your CV directly to{" "}
-                <a href="mailto:kdfacilitiesmanagementservices@gmail.com" className="text-brandblue-600 font-bold hover:underline">
-                  kdfacilitiesmanagementservices@gmail.com
+                <a href="mailto:info@kdintegratedservices.com" className="text-brandblue-600 font-bold hover:underline">
+                  info@kdintegratedservices.com
                 </a>
               </p>
             </div>

@@ -269,7 +269,7 @@ export default function AdminDashboardPage() {
               Company & Statutory Settings
             </h3>
             <p className="text-xs text-slate-600 mt-1">
-              Update phone numbers, GST/EPFO/ESIC credentials, address, and KD Cleaning Tech links.
+              Update phone numbers, GST/EPFO/ESIC credentials, address, and KD Integrated Services links.
             </p>
           </Link>
 
@@ -340,7 +340,7 @@ export default function AdminDashboardPage() {
                 <tbody className="divide-y divide-slate-100">
                   {leads.slice(0, 6).map((lead) => {
                     const cleanPhone = lead.phone.replace(/\D/g, "");
-                    const whatsappDirectUrl = `https://wa.me/${cleanPhone.length === 10 ? `91${cleanPhone}` : cleanPhone}?text=${encodeURIComponent(`Hello ${lead.name}, regarding your facility inquiry for KD Facilities Management Services...`)}`;
+                    const whatsappDirectUrl = `https://wa.me/${cleanPhone.length === 10 ? `91${cleanPhone}` : cleanPhone}?text=${encodeURIComponent(`Hello ${lead.name}, regarding your facility inquiry for KD Integrated Services...`)}`;
 
                     return (
                       <tr key={lead.id} className="hover:bg-slate-50/60 transition-colors">

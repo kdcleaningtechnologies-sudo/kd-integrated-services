@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
           url: article.featuredImage,
           width: 1200,
           height: 630,
-          alt: `${article.title} - KD Facilities Management Services`,
+          alt: `${article.title} - KD Integrated Services`,
         },
       ],
     },
@@ -281,7 +281,7 @@ export default function ArticleDetailPage({ params }: ArticlePageProps) {
                 </Link>
 
                 <div className="text-xs text-slate-500">
-                  Published by <strong className="text-navy-950">KD Facilities Management Services</strong>
+                  Published by <strong className="text-navy-950">KD Integrated Services</strong>
                 </div>
               </div>
             </article>

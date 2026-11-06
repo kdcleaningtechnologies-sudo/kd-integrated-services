@@ -68,7 +68,7 @@ export default function AdminServicesPage() {
       whoItsFor: "Corporate offices, industrial facilities, and Grade-A commercial properties.",
       benefits: [
         "100% SLA binding compliance with zero ghost workers",
-        "Mechanized equipment deployment backed by KD Cleaning Technologies",
+        "Mechanized equipment deployment backed by KD Integrated Services",
         "Full statutory compliance and verified staffing roster",
       ],
       slaNote: "Guaranteed SLA uptime / quality score",

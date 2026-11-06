@@ -12,10 +12,10 @@ export const metadata: Metadata = {
     "Housekeeping Supervisor Jobs Gurugram",
     "HVAC Technician Vacancies Noida",
     "Facility Operations Manager Jobs",
-    "KD Facilities Management Services Careers",
+    "KD Integrated Services Careers",
   ],
   ...socialMetadata("/careers", {
-    title: "Careers & Facility Jobs in Gurgaon & Delhi NCR | KD Facilities Management Services",
+    title: "Careers & Facility Jobs in Gurgaon & Delhi NCR | KD Integrated Services",
     description: "Join India's leading facility management team. 100% on-time wages, PF, ESIC, and certified leadership growth paths.",
   }),
 };

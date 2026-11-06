@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     "residential society pest control Gurugram",
   ],
   ...socialMetadata("/services/pest-control", {
-    title: "Pest Control Services in Gurugram & Delhi NCR | KD Facilities Management Services",
+    title: "Pest Control Services in Gurugram & Delhi NCR | KD Integrated Services",
     description:
       "Integrated pest management for corporate, retail, hospital, industrial, and residential facilities across Gurugram and Delhi NCR. Eco-friendly chemicals, digital AMC reporting, one vendor.",
   }),
@@ -299,7 +299,7 @@ export default function PestControlServicesPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeading
               badge="Why KD"
-              title="Why Choose KD Facilities Management Services for Pest Control"
+              title="Why Choose KD Integrated Services for Pest Control"
               subtitle="The same operational rigor we apply to housekeeping, PASARA security, and MEP—applied to pest AMC across Gurugram and Delhi NCR."
             />
 

@@ -283,7 +283,7 @@ export default function AdminIndustriesPage() {
                     Client Pain Points & Operational Risks ({currentIndustry.painPoints?.length || 0})
                   </h4>
                   <p className="text-[11px] text-slate-400">
-                    Key friction points that lead clients in this vertical to switch to KD Facilities Management Services.
+                    Key friction points that lead clients in this vertical to switch to KD Integrated Services.
                   </p>
                 </div>
                 <button

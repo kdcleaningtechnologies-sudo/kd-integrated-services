@@ -17,17 +17,17 @@ import { socialMetadata } from "@/lib/seo";
 export const metadata: Metadata = {
   title: "About Us — IFM Company in Gurgaon & Delhi",
   description:
-    "Learn about KD Facilities Management Services, our leadership, PASARA & statutory compliance, and our specialized technology arm KD Cleaning Technologies across Gurugram, Manesar, Noida, and Delhi NCR.",
+    "Learn about KD Integrated Services, our leadership, PASARA & statutory compliance, and our specialized technology arm KD Integrated Services across Gurugram, Manesar, Noida, and Delhi NCR.",
   keywords: [
-    "About KD Facilities Management Services",
+    "About KD Integrated Services",
     "Facility Management Company Gurgaon",
     "Facility Management Company Delhi",
     "Corporate Housekeeping Agency NCR",
     "PASARA Compliance Haryana",
-    "KD Cleaning Technologies Arm",
+    "KD Integrated Services Technology Arm",
   ],
   ...socialMetadata("/about", {
-    title: "About KD Facilities Management Services | IFM Company in Gurgaon & Delhi",
+    title: "About KD Integrated Services | IFM Company in Gurgaon & Delhi",
     description:
       "Institutional-grade housekeeping, PASARA security, and MEP engineering with digital SLA proof. Offices in Gurgaon Sector 31 and Sarita Vihar, New Delhi.",
   }),
@@ -54,7 +54,7 @@ export default function AboutPage() {
               Transforming Facility Management into a Strategic Corporate Advantage
             </h1>
             <p className="mt-4 text-sm sm:text-base text-slate-300 leading-relaxed font-normal">
-              KD Facilities Management Services was founded to bridge the critical gap between unorganized manpower contractors and overpriced global conglomerates. We provide institutional-grade soft, security, and MEP engineering services with modern digital accountability across Gurugram, Manesar, Noida, Faridabad, and Delhi NCR.
+              KD Integrated Services was founded to bridge the critical gap between unorganized manpower contractors and overpriced global conglomerates. We provide institutional-grade soft, security, and MEP engineering services with modern digital accountability across Gurugram, Manesar, Noida, Faridabad, and Delhi NCR.
             </p>
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function AboutPage() {
 
               <div className="space-y-3 text-sm text-slate-700 leading-relaxed">
                 <p>
-                  Every engagement with KD Facilities Management Services is bound by an objective Service Level Agreement (SLA). We deploy biometric facial attendance to eliminate ghost workers, install QR checkpoints across all restrooms to verify actual cleaning sweeps, and provide facility heads with automated 7 PM photo handover reports.
+                  Every engagement with KD Integrated Services is bound by an objective Service Level Agreement (SLA). We deploy biometric facial attendance to eliminate ghost workers, install QR checkpoints across all restrooms to verify actual cleaning sweeps, and provide facility heads with automated 7 PM photo handover reports.
                 </p>
                 <p>
                   Through our specialized equipment arm,{" "}
@@ -140,7 +140,7 @@ export default function AboutPage() {
                     rel="noopener noreferrer"
                     className="text-navy-950 hover:text-brandgreen-600 font-semibold underline decoration-slate-300 hover:decoration-brandgreen-500 transition-colors inline-flex items-center gap-0.5"
                   >
-                    KD Cleaning Technologies
+                    KD Integrated Services
                     <ExternalLink className="w-2.5 h-2.5 text-brandgreen-600" />
                   </a>.
                 </p>
@@ -301,7 +301,7 @@ export default function AboutPage() {
       <section className="py-14 sm:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <LeadForm
-            headline="Partner with KD Facilities Management Services"
+            headline="Partner with KD Integrated Services"
             subheadline="Let's discuss how our integrated facility framework can elevate your property while optimizing operating costs."
           />
         </div>

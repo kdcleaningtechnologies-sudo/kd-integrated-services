@@ -18,81 +18,93 @@ import {
   MapPin,
   LayoutDashboard,
   Check,
-  Calendar,
+  Leaf,
+  UserCheck,
+  Radio,
+  Headphones,
+  Layers,
+  ClipboardCheck,
 } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { LeadForm } from "@/components/LeadForm";
 import { ClientsShowcase } from "@/components/ClientsShowcase";
+import HeroSlideshow from "@/components/HeroSlideshow";
 
-// Homepage service directory cards
 const SERVICES_CARDS = [
   {
     id: "integrated-facility-management",
     title: "Integrated Facility Management",
+    desc: "Single-window management of soft & hard services.",
     href: "/facility-management",
     icon: Building2,
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80",
-    alt: "Modern commercial glass corporate tower for integrated facility management",
+    image: "/images/services/service-ifm.jpg",
+    alt: "KD Integrated Services operations team for integrated facility management",
   },
   {
     id: "commercial-cleaning",
     title: "Commercial Cleaning",
+    desc: "Mechanized deep cleaning for offices, malls & IT parks.",
     href: "/services/cleaning",
     icon: Sparkles,
-    image: "/images/operations-hero.jpg",
+    image: "/images/services/service-commercial-cleaning.jpg",
     alt: "Mechanized ride-on floor scrubber commercial cleaning operations",
   },
   {
     id: "housekeeping",
     title: "Housekeeping",
+    desc: "Uniformed staff working to daily SOP checklists.",
     href: "/services/cleaning#corporate-housekeeping",
     icon: Home,
-    image: "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=600&q=80",
+    image: "/images/services/service-housekeeping.jpg",
     alt: "Hospitality and corporate housekeeping professional cleaning desk",
   },
   {
     id: "security",
     title: "Security",
+    desc: "PSARA-licensed, police-verified guards & supervisors.",
     href: "/services/security",
     icon: ShieldCheck,
-    image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=600&q=80",
+    image: "/images/services/service-security.jpg",
     alt: "Uniformed security guard standing on duty for commercial perimeter safety",
   },
   {
     id: "high-rise-cleaning",
     title: "High-Rise Cleaning",
+    desc: "Rope access & water-fed glass & façade care.",
     href: "/services/specialised#facade-cleaning",
     icon: Building2,
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80",
+    image: "/images/services/service-highrise.jpg",
     alt: "Skyscraper glass curtain wall high-rise facade cleaning technician",
   },
   {
     id: "drone-cleaning",
     title: "Drone Cleaning",
+    desc: "Autonomous façade washing with zero cradle risk.",
     href: "/technology",
     icon: Plane,
-    image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=600&q=80",
+    image: "/images/services/service-drone.jpg",
     alt: "Autonomous façade drone cleaning commercial building exterior",
   },
   {
     id: "maintenance",
     title: "Maintenance",
+    desc: "Preventive AMCs for HVAC, electrical, plumbing & STP.",
     href: "/services/technical",
     icon: Wrench,
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80",
-    alt: "MEP electrical engineering maintenance technician with helmet inspecting panel",
+    image: "/images/services/service-maintenance.jpg",
+    alt: "MEP electrical engineering maintenance technician inspecting panel",
   },
   {
     id: "pest-control",
     title: "Pest Control",
+    desc: "Odorless, eco-safe treatments & green care.",
     href: "/services/pest-control",
     icon: Bug,
-    image: "https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=600&q=80",
+    image: "/images/services/service-pest.jpg",
     alt: "Commercial kitchen and facility hygiene environment for pest control services",
   },
 ];
 
-// 7 Industry Cards matching attachment
 const INDUSTRY_CARDS = [
   {
     id: "corporate",
@@ -145,87 +157,99 @@ const INDUSTRY_CARDS = [
   },
 ];
 
-// 5 Technology Feature Cards matching attachment
 const TECHNOLOGY_FEATURES = [
   {
     id: "drones",
     title: "Cleaning Drones",
     desc: "High-rise & difficult access areas with zero cradle fall hazard",
     icon: Plane,
+    image: "/images/technology/tech-drones.jpg",
   },
   {
     id: "water-fed",
     title: "Water-fed Systems",
     desc: "Streak-free glass & façade cleaning using 100% pure RO water",
     icon: Droplets,
+    image: "/images/technology/tech-waterfed.jpg",
   },
   {
     id: "inspections",
     title: "Digital Inspections",
     desc: "QR-based & mobile reporting with real-time incident logging",
     icon: QrCode,
+    image: "/images/technology/tech-inspections.jpg",
   },
   {
     id: "workforce",
     title: "Workforce Monitoring",
     desc: "Attendance, biometric verification & GPS field patrol tracking",
     icon: ShieldCheck,
+    image: "/images/technology/tech-workforce.jpg",
   },
   {
     id: "dashboard",
     title: "Client Dashboard",
     desc: "Real-time SLA reports, audit logs & instant service visibility",
     icon: LayoutDashboard,
+    image: "/images/technology/tech-dashboard.jpg",
+  },
+  {
+    id: "equipment",
+    title: "Advanced Equipment",
+    desc: "Modern, eco-friendly and high-efficiency cleaning machines",
+    icon: Sparkles,
+    image: "/images/technology/tech-equipment.jpg",
   },
 ];
 
-// 3 Case Studies matching attachment
+const HERO_PILLS = [
+  { label: "Trained & Verified Workforce", icon: UserCheck },
+  { label: "Advanced Cleaning Technology", icon: Sparkles },
+  { label: "Real-time Service Monitoring", icon: Radio },
+  { label: "Safe, Compliant & Eco-friendly", icon: Leaf },
+];
+
 const CASE_STUDIES = [
   {
     id: "corporate-office",
-    title: "Corporate Office",
-    category: "Commercial",
-    location: "Gurgaon",
-    scope: "Integrated Housekeeping & Cleaning",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80",
+    title: "Integrated Housekeeping & Cleaning",
+    category: "Corporate Office",
+    desc: "Mechanized floor care, washroom hygiene and pantry services under one SOP-driven contract.",
+    image: "/images/case-studies/case-corporate.jpg",
     href: "/projects#corporate",
   },
   {
     id: "residential-society",
-    title: "Residential Society",
-    category: "Residential",
-    location: "Gurgaon",
-    scope: "RWA Facility Management",
-    image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80",
+    title: "RWA Facility Management",
+    category: "Residential Society",
+    desc: "Security, common-area upkeep, landscaping and engineering AMCs for a gated township.",
+    image: "/images/case-studies/case-residential.jpg",
     href: "/projects#residential",
   },
   {
     id: "hospital",
-    title: "Hospital",
-    category: "Healthcare",
-    location: "Gurgaon",
-    scope: "Housekeeping + GDA + Security",
-    image: "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=600&q=80",
+    title: "Housekeeping + GDA + Security",
+    category: "Hospital",
+    desc: "Infection-control housekeeping, trained General Duty Assistants and 24/7 security cover.",
+    image: "/images/case-studies/case-hospital.jpg",
     href: "/projects#healthcare",
   },
 ];
+
+const COVERAGE_CITIES = ["Gurgaon", "Delhi", "Noida", "Faridabad", "Manesar"];
 
 export default function HomePage() {
   return (
     <>
       <JsonLd />
 
-      {/* 1. HERO SECTION MATCHING ATTACHMENT */}
       <section className="relative bg-gradient-to-b from-navy-950 via-navy-900 to-navy-950 text-white pt-12 pb-24 lg:pt-16 lg:pb-32 overflow-hidden">
-        {/* Subtle background ambient glow and grid */}
         <div className="absolute inset-0 bg-hero-glow pointer-events-none opacity-40" />
         <div className="absolute inset-0 bg-telemetry-grid pointer-events-none opacity-20" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
-            {/* Left Hero Content */}
-            <div className="lg:col-span-6 space-y-6">
-              {/* Breadcrumb Tags matching attachment */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+            <div className="lg:col-span-6 flex flex-col justify-center space-y-5 sm:space-y-6">
               <div className="inline-flex items-center gap-2 text-[11px] font-bold tracking-wider text-brandcyan-400 uppercase">
                 <span>FACILITY MANAGEMENT</span>
                 <span className="text-slate-600">|</span>
@@ -236,23 +260,46 @@ export default function HomePage() {
                 <span>MAINTENANCE</span>
               </div>
 
-              {/* Main H1 Headline */}
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
                 Technology-Driven{" "}
                 <span className="text-gradient-brand">Facility Management</span>{" "}
-                for Modern India
+                <span className="relative inline-block pb-4">
+                  for Modern India
+                  <svg
+                    className="pointer-events-none absolute left-0 right-0 -bottom-1 h-4 w-full"
+                    viewBox="0 0 220 16"
+                    fill="none"
+                    preserveAspectRatio="none"
+                    aria-hidden="true"
+                  >
+                    <path d="M4 4 C 60 15, 160 15, 216 3" stroke="#00D6B5" strokeWidth="3.2" strokeLinecap="round" />
+                  </svg>
+                </span>
               </h1>
 
-              {/* Description */}
               <p className="text-sm sm:text-base text-slate-300 leading-relaxed max-w-xl">
-                KD Facilities Management Services provides integrated facility management, housekeeping, cleaning, security and technical maintenance solutions for commercial, residential, industrial and institutional properties across Gurgaon and Delhi NCR.
+                KD Integrated Services provides end-to-end facility management, housekeeping, cleaning, security and technical maintenance solutions for commercial, residential, industrial and institutional properties across Gurgaon and Delhi NCR.
               </p>
 
-              {/* Dual CTA Buttons */}
-              <div className="flex flex-wrap items-center gap-3.5 pt-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {HERO_PILLS.map((pill) => {
+                  const Icon = pill.icon;
+                  return (
+                    <div
+                      key={pill.label}
+                      className="flex items-center gap-3 rounded-2xl border border-navy-600/80 bg-navy-900/70 px-4 py-3"
+                    >
+                      <Icon className="w-4 h-4 text-brandcyan-400 shrink-0" />
+                      <span className="text-xs sm:text-sm font-semibold text-slate-100">{pill.label}</span>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="flex flex-wrap items-center gap-3.5 pt-1">
                 <Link
                   href="#site-survey"
-                  className="px-6 py-3 rounded-xl btn-brand-primary text-xs sm:text-sm font-bold shadow-lg shadow-brandblue-500/25 hover:shadow-xl transition-all inline-flex items-center gap-2"
+                  className="px-6 py-3 rounded-full btn-brand-primary text-xs sm:text-sm font-bold shadow-lg shadow-brandblue-500/25 hover:shadow-xl transition-all inline-flex items-center gap-2"
                 >
                   <span>Request a Free Site Survey</span>
                   <ArrowRight className="w-4 h-4" />
@@ -260,136 +307,72 @@ export default function HomePage() {
 
                 <Link
                   href="#services"
-                  className="px-6 py-3 rounded-xl border border-slate-700 bg-navy-900/80 hover:bg-navy-800 text-xs sm:text-sm font-semibold text-slate-200 transition-colors"
+                  className="px-6 py-3 rounded-full border border-slate-600 bg-navy-900/80 hover:bg-navy-800 text-xs sm:text-sm font-semibold text-slate-200 transition-colors"
                 >
                   Explore Our Services
                 </Link>
               </div>
             </div>
 
-            {/* Right Hero Visual: Composite Architecture + Drone + Operations Crew matching attachment */}
-            <div className="lg:col-span-6 relative">
-              <div className="relative rounded-3xl overflow-hidden border border-navy-700/80 bg-navy-900/90 shadow-2xl backdrop-blur-md group">
-                {/* Hero Composite Image */}
-                <div className="relative aspect-[16/11] w-full bg-navy-950 overflow-hidden">
-                  <Image
-                    src="/images/kd-hero-staff.png"
-                    alt="KD Facilities Management Services operations team with tablet, housekeeping cart, and security officer at modern corporate campus"
-                    fill
-                    priority
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover object-[78%_center] transform group-hover:scale-105 transition-transform duration-1000 opacity-95 group-hover:opacity-100"
-                  />
-                  {/* Subtle gradient overlay at bottom for badge readability */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/20 to-transparent" />
-
-                  {/* Hovering Drone Graphic Overlay */}
-                  <div className="absolute top-4 right-6 animate-float-drone flex items-center gap-2 bg-navy-950/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-brandcyan-500/40 shadow-lg">
-                    <Plane className="w-3.5 h-3.5 text-brandcyan-400" />
-                    <span className="text-[10px] font-mono text-brandcyan-300 font-bold">Façade Drone Active</span>
-                  </div>
-
-                  {/* Facility Crew Silhouette / Badge at bottom */}
-                  <div className="absolute bottom-4 left-4 right-4 flex flex-wrap items-center justify-between gap-2 p-3 rounded-xl bg-navy-900/90 backdrop-blur-md border border-navy-700/80">
-                    <div className="flex items-center gap-2.5">
-                      <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-brandblue-600 to-brandcyan-400 flex items-center justify-center">
-                        <ShieldCheck className="w-4 h-4 text-white" />
-                      </div>
-                      <div>
-                        <p className="text-xs font-bold text-white leading-tight">
-                          Supervised On-Site Teams
-                        </p>
-                        <p className="text-[10px] text-slate-400 font-mono">
-                          100% Police-Verified & Uniformed
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Floating pill matching attachment */}
-                    <div className="text-right hidden sm:block">
-                      <span className="text-[10px] text-brandcyan-400 font-semibold tracking-wide block">
-                        Cleaner Spaces • Safer Spaces
-                      </span>
-                      <span className="text-[9px] text-slate-400 font-mono">
-                        Better Living
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="lg:col-span-6 relative min-h-[300px] sm:min-h-[380px] lg:min-h-[520px]">
+              <HeroSlideshow />
             </div>
           </div>
         </div>
       </section>
 
-      {/* 2. FLOATING 4-PILLAR OPERATIONS BAR MATCHING ATTACHMENT */}
       <section className="relative -mt-8 sm:-mt-12 z-20 px-4 sm:px-6 lg:px-8 mb-10 sm:mb-14">
         <div className="max-w-7xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl border border-slate-200/90 p-5 sm:p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
-            {/* Pillar 1: People */}
             <div className="flex items-center gap-3.5 pt-3 sm:pt-0 sm:px-3">
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brandblue-50 to-brandcyan-50 border border-brandcyan-200/60 flex items-center justify-center flex-shrink-0 text-brandblue-600">
                 <Users className="w-5 h-5" />
               </div>
               <div>
                 <h4 className="text-sm font-bold text-navy-950">People</h4>
-                <p className="text-xs text-slate-500 leading-snug">
-                  Trained & supervised workforce
-                </p>
+                <p className="text-xs text-slate-500 leading-snug">Trained & supervised workforce</p>
               </div>
             </div>
 
-            {/* Pillar 2: Process */}
             <div className="flex items-center gap-3.5 pt-3 sm:pt-0 sm:px-3">
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brandblue-50 to-brandcyan-50 border border-brandcyan-200/60 flex items-center justify-center flex-shrink-0 text-brandcyan-600">
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <div>
                 <h4 className="text-sm font-bold text-navy-950">Process</h4>
-                <p className="text-xs text-slate-500 leading-snug">
-                  Standardised SOP-driven operations
-                </p>
+                <p className="text-xs text-slate-500 leading-snug">Standardised SOP-driven operations</p>
               </div>
             </div>
 
-            {/* Pillar 3: Technology */}
             <div className="flex items-center gap-3.5 pt-3 sm:pt-0 sm:px-3">
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brandblue-50 to-brandcyan-50 border border-brandcyan-200/60 flex items-center justify-center flex-shrink-0 text-brandblue-600">
                 <Cpu className="w-5 h-5" />
               </div>
               <div>
                 <h4 className="text-sm font-bold text-navy-950">Technology</h4>
-                <p className="text-xs text-slate-500 leading-snug">
-                  Digital monitoring & modern equipment
-                </p>
+                <p className="text-xs text-slate-500 leading-snug">Digital monitoring & modern equipment</p>
               </div>
             </div>
 
-            {/* Pillar 4: Performance */}
             <div className="flex items-center gap-3.5 pt-3 sm:pt-0 sm:px-3">
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brandblue-50 to-brandcyan-50 border border-brandcyan-200/60 flex items-center justify-center flex-shrink-0 text-emerald-600">
                 <TrendingUp className="w-5 h-5" />
               </div>
               <div>
                 <h4 className="text-sm font-bold text-navy-950">Performance</h4>
-                <p className="text-xs text-slate-500 leading-snug">
-                  Measurable service delivery
-                </p>
+                <p className="text-xs text-slate-500 leading-snug">Measurable service delivery</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CLIENT SHOWCASE: OZONE PHARMA, AVISS HOSPITAL, SARVODAYA, TRANSCOMM, ESSENTIA, SUDEVA FC */}
       <ClientsShowcase className="mt-2" />
 
-      {/* 3. OUR SERVICES SECTION MATCHING ATTACHMENT */}
       <section id="services" className="py-16 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header Row */}
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-10 border-b border-slate-100">
-            <div className="space-y-1">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-10">
+            <div className="space-y-1 max-w-md">
               <span className="text-xs font-extrabold uppercase tracking-wider text-brandblue-600">
                 OUR SERVICES
               </span>
@@ -411,38 +394,38 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Services Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-4 gap-4 pt-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {SERVICES_CARDS.map((srv) => {
               const Icon = srv.icon;
               return (
                 <Link
                   key={srv.id}
                   href={srv.href}
-                  className="group bg-white rounded-2xl border border-slate-200/90 p-3 hover:border-brandcyan-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+                  className="group bg-white rounded-2xl border border-slate-200/90 p-2.5 hover:border-brandcyan-400 hover:shadow-xl transition-all duration-300"
                 >
-                  {/* Top: Icon + Title + Arrow */}
-                  <div>
-                    <div className="flex items-center justify-between pb-2">
-                      <div className="w-8 h-8 rounded-lg bg-slate-50 group-hover:bg-brandblue-50 flex items-center justify-center text-slate-700 group-hover:text-brandblue-600 transition-colors">
-                        <Icon className="w-4 h-4" />
+                  <div className="relative">
+                    <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden bg-slate-100">
+                      <Image
+                        src={srv.image}
+                        alt={srv.alt}
+                        fill
+                        quality={90}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                        className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-white/95 shadow-sm flex items-center justify-center">
+                        <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-brandcyan-500 group-hover:translate-x-0.5 transition-all" />
                       </div>
-                      <ArrowRight className="w-3.5 h-3.5 text-slate-300 group-hover:text-brandcyan-500 group-hover:translate-x-0.5 transition-all" />
                     </div>
-                    <h3 className="text-xs font-bold text-navy-950 group-hover:text-brandblue-600 transition-colors line-clamp-2 leading-snug mb-3">
+                    <div className="absolute -bottom-4 left-3 w-9 h-9 rounded-xl bg-gradient-to-br from-[#00C8E8] to-[#00D6B5] flex items-center justify-center text-white shadow-lg shadow-brandcyan-500/30">
+                      <Icon className="w-4 h-4" />
+                    </div>
+                  </div>
+                  <div className="px-2 pt-7 pb-2">
+                    <h3 className="text-sm font-bold text-navy-950 group-hover:text-brandblue-600 transition-colors leading-snug">
                       {srv.title}
                     </h3>
-                  </div>
-
-                  {/* Thumbnail Image */}
-                  <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden bg-slate-100">
-                    <Image
-                      src={srv.image}
-                      alt={srv.alt}
-                      fill
-                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 15vw"
-                      className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
-                    />
+                    <p className="text-xs text-slate-500 leading-relaxed mt-1">{srv.desc}</p>
                   </div>
                 </Link>
               );
@@ -451,10 +434,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. INDUSTRIES SECTION MATCHING ATTACHMENT */}
       <section id="industries" className="py-16 sm:py-20 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header Row */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-8">
             <div className="space-y-1">
               <span className="text-xs font-extrabold uppercase tracking-wider text-brandblue-600">
@@ -476,7 +457,6 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* 7 Industry Cards matching attachment */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4 pt-4">
             {INDUSTRY_CARDS.map((ind) => (
               <Link
@@ -484,7 +464,6 @@ export default function HomePage() {
                 href={ind.href}
                 className="group bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-brandcyan-400 hover:shadow-lg transition-all duration-300 flex flex-col"
               >
-                {/* Photo */}
                 <div className="relative aspect-[4/3] w-full bg-slate-100 overflow-hidden">
                   <Image
                     src={ind.image}
@@ -494,7 +473,6 @@ export default function HomePage() {
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
-                {/* Name Strip */}
                 <div className="p-3 flex items-center justify-between text-xs font-bold text-navy-950 group-hover:text-brandblue-600 transition-colors">
                   <span className="truncate">{ind.title}</span>
                   <ArrowRight className="w-3 h-3 text-slate-300 group-hover:text-brandcyan-500 group-hover:translate-x-0.5 transition-all flex-shrink-0" />
@@ -505,26 +483,35 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. OUR TECHNOLOGY SECTION MATCHING ATTACHMENT */}
-      <section id="technology" className="py-20 bg-gradient-to-b from-navy-950 via-navy-900 to-navy-950 text-white relative overflow-hidden">
+      <section id="technology" className="py-20 bg-[#071426] text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-telemetry-grid opacity-15 pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            {/* Left Headline & Overview */}
-            <div className="lg:col-span-5 space-y-4">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-brandcyan-400">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+            <div className="lg:col-span-5 space-y-5">
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-brandcyan-500/30 bg-navy-900/70 text-[10px] font-extrabold uppercase tracking-wider text-brandcyan-400">
                 OUR TECHNOLOGY
               </span>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight leading-tight">
-                Smarter Tools. Greater Control. Better Outcomes.
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+                Smarter Tools.
+                <br />
+                Greater Control.
+                <br />
+                <span className="relative inline-block pb-2">
+                  Better Outcomes.
+                  <span className="absolute left-0 right-0 -bottom-0.5 h-0.5 bg-gradient-to-r from-[#087BFF] to-[#00D6B5]" />
+                </span>
               </h2>
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed pt-1">
+              <p className="text-sm text-slate-300 leading-relaxed max-w-md">
                 We leverage modern technology and advanced equipment to deliver efficient, transparent and high-quality facility management services.
               </p>
-              <div className="pt-2">
+              <div className="inline-flex items-center gap-2 rounded-full border border-navy-600 bg-navy-900/80 px-4 py-2.5 text-xs text-slate-200">
+                <Sparkles className="w-3.5 h-3.5 text-brandcyan-400" />
+                <span>Powered by KD Cleaning Technologies — our in-house technology arm.</span>
+              </div>
+              <div>
                 <Link
                   href="/technology"
-                  className="px-5 py-2.5 rounded-xl btn-brand-primary text-xs font-bold inline-flex items-center gap-2 shadow-lg shadow-brandblue-500/25 hover:shadow-xl transition-all"
+                  className="px-5 py-2.5 rounded-full btn-brand-primary text-xs font-bold inline-flex items-center gap-2 shadow-lg shadow-brandblue-500/25 hover:shadow-xl transition-all"
                 >
                   <span>Explore Our Technology</span>
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -532,27 +519,36 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right 5 Feature Cards matching attachment */}
-            <div className="lg:col-span-7 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {TECHNOLOGY_FEATURES.map((tech) => {
                 const Icon = tech.icon;
                 return (
-                  <div
+                  <Link
                     key={tech.id}
-                    className="rounded-2xl bg-navy-900/90 border border-navy-700/80 p-3.5 flex flex-col justify-between hover:border-brandcyan-400/80 hover:bg-navy-800/80 transition-all duration-300 group"
+                    href="/technology"
+                    className="group rounded-2xl overflow-hidden bg-navy-900/80 border border-navy-700/70 hover:border-brandcyan-400/70 transition-all"
                   >
-                    <div className="w-9 h-9 rounded-xl bg-navy-950 border border-navy-800 flex items-center justify-center text-brandcyan-400 group-hover:text-white group-hover:bg-gradient-to-tr group-hover:from-brandblue-600 group-hover:to-brandcyan-400 transition-all mb-3">
-                      <Icon className="w-4 h-4" />
+                    <div className="relative aspect-[16/10] overflow-hidden">
+                      <Image
+                        src={tech.image}
+                        alt={tech.title}
+                        fill
+                        quality={90}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 18vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute top-2.5 left-2.5 w-8 h-8 rounded-lg bg-navy-950/85 border border-white/10 flex items-center justify-center text-brandcyan-400">
+                        <Icon className="w-3.5 h-3.5" />
+                      </div>
+                      <div className="absolute top-2.5 right-2.5 w-7 h-7 rounded-full bg-navy-950/85 border border-white/10 flex items-center justify-center text-white group-hover:text-brandcyan-400">
+                        <ArrowRight className="w-3 h-3" />
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="text-xs font-bold text-white mb-1 leading-snug">
-                        {tech.title}
-                      </h4>
-                      <p className="text-[11px] text-slate-400 leading-tight">
-                        {tech.desc}
-                      </p>
+                    <div className="p-3.5">
+                      <h4 className="text-sm font-bold text-white mb-1">{tech.title}</h4>
+                      <p className="text-[11px] text-slate-400 leading-relaxed">{tech.desc}</p>
                     </div>
-                  </div>
+                  </Link>
                 );
               })}
             </div>
@@ -560,56 +556,28 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 6. WHY KD FACILITIES MANAGEMENT SERVICES MATCHING ATTACHMENT */}
       <section className="py-16 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            {/* Left Column: Heading & Learn More */}
-            <div className="lg:col-span-4 space-y-4">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+            <div className="lg:col-span-5 space-y-5">
               <span className="text-xs font-extrabold uppercase tracking-wider text-brandblue-600">
-                WHY KD FACILITIES MANAGEMENT SERVICES
+                WHY KD INTEGRATED SERVICES
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-navy-950 tracking-tight leading-tight">
                 Your Trusted FM Partner in Delhi NCR
               </h2>
-              <p className="text-xs sm:text-sm text-slate-500 leading-relaxed">
-                We combine trained people, proven processes and advanced technology to deliver safe, clean and well-managed environments — every day across Gurgaon, Delhi, Noida, Greater Noida, Faridabad, and IMT Manesar.
+              <p className="text-sm text-slate-500 leading-relaxed">
+                Compliance-first operations, technology-backed supervision and contracts that put you in control — so your facility runs without surprises.
               </p>
-              <div className="pt-2">
-                <Link
-                  href="/about"
-                  className="text-xs font-bold text-brandblue-600 hover:text-brandblue-700 inline-flex items-center gap-1.5 transition-colors"
-                >
-                  <span>Learn More About Us</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-              </div>
-            </div>
-
-            {/* Center Column: High-Rise Image & Verified Checklist */}
-            <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
-              <div className="relative aspect-[4/5] w-full rounded-2xl overflow-hidden bg-slate-100 shadow-md">
-                <Image
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80"
-                  alt="Modern commercial corporate facility campus managed by KD Facilities Management Services"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 30vw"
-                  className="object-cover object-center"
-                />
-              </div>
-
-              {/* 5-point Checklist matching attachment */}
-              <div className="space-y-3">
+              <div className="space-y-3 pt-1">
                 {[
-                  "Experienced & Trained Teams",
-                  "SOP-Driven Operations",
-                  "Advanced Equipment & Technology",
-                  "Safety & Compliance Focus",
-                  "Dedicated Account Management",
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-2 text-xs font-semibold text-navy-900">
-                    <div className="w-4 h-4 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-2.5 h-2.5" />
+                  "PSARA-licensed security with EPFO/ESIC-compliant payroll",
+                  "Flexible monthly AMCs — no long-term lock-in",
+                  "Dedicated site supervisors with digital daily reporting",
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-2.5 text-sm font-medium text-navy-900">
+                    <div className="mt-0.5 w-5 h-5 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center flex-shrink-0">
+                      <Check className="w-3 h-3" />
                     </div>
                     <span>{item}</span>
                   </div>
@@ -617,147 +585,122 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Column: 4 Stat Blocks (2x2) matching attachment */}
-            <div className="lg:col-span-3 grid grid-cols-2 gap-3">
-              <div className="bg-slate-50 rounded-2xl p-4 border border-slate-200">
-                <p className="text-2xl font-extrabold text-navy-950 font-mono">24/7</p>
-                <p className="text-[11px] text-slate-500 font-medium">Facility Support</p>
+            <div className="lg:col-span-7 space-y-4">
+              <div className="grid grid-cols-3 gap-3">
+                <div className="bg-slate-50 rounded-2xl p-5 border border-slate-100 text-center">
+                  <Headphones className="w-5 h-5 text-slate-400 mx-auto mb-2" />
+                  <p className="text-2xl sm:text-3xl font-extrabold text-navy-950">24/7</p>
+                  <p className="text-[11px] text-slate-500 font-medium mt-1">Facility Support</p>
+                </div>
+                <div className="bg-slate-50 rounded-2xl p-5 border border-slate-100 text-center">
+                  <Layers className="w-5 h-5 text-slate-400 mx-auto mb-2" />
+                  <p className="text-2xl sm:text-3xl font-extrabold text-navy-950">9+</p>
+                  <p className="text-[11px] text-slate-500 font-medium mt-1">Integrated Solutions</p>
+                </div>
+                <div className="bg-slate-50 rounded-2xl p-5 border border-slate-100 text-center">
+                  <ClipboardCheck className="w-5 h-5 text-slate-400 mx-auto mb-2" />
+                  <p className="text-2xl sm:text-3xl font-extrabold text-navy-950">100%</p>
+                  <p className="text-[11px] text-slate-500 font-medium mt-1">SOP Driven Operations</p>
+                </div>
               </div>
-              <div className="bg-slate-50 rounded-2xl p-4 border border-slate-200">
-                <p className="text-2xl font-extrabold text-brandblue-600 font-mono">9+</p>
-                <p className="text-[11px] text-slate-500 font-medium">Integrated Solutions</p>
-              </div>
-              <div className="bg-slate-50 rounded-2xl p-4 border border-slate-200">
-                <p className="text-2xl font-extrabold text-navy-950 font-mono">100%</p>
-                <p className="text-[11px] text-slate-500 font-medium">SOP Driven Operations</p>
-              </div>
-              <div className="bg-slate-50 rounded-2xl p-4 border border-slate-200">
-                <p className="text-lg sm:text-xl font-extrabold text-brandcyan-600 font-mono">Delhi NCR</p>
-                <p className="text-[10px] text-slate-500 font-medium leading-tight">Gurgaon, Delhi, Noida, Faridabad, Manesar</p>
+
+              <div className="relative overflow-hidden rounded-3xl bg-[#071426] px-6 py-7 min-h-[190px]">
+                <div className="relative z-10 max-w-[58%]">
+                  <div className="inline-flex items-center gap-1.5 text-[10px] font-extrabold uppercase tracking-wider text-brandcyan-400 mb-2">
+                    <MapPin className="w-3 h-3" />
+                    <span>COVERAGE</span>
+                  </div>
+                  <h3 className="text-2xl font-extrabold text-white mb-4">Across Delhi NCR</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {COVERAGE_CITIES.map((city) => (
+                      <span
+                        key={city}
+                        className="px-3 py-1 rounded-full bg-navy-800/90 border border-navy-600 text-xs font-semibold text-slate-200"
+                      >
+                        {city}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+                <div className="pointer-events-none absolute right-[-20px] top-1/2 -translate-y-1/2 w-56 h-56" aria-hidden="true">
+                  <div className="absolute inset-0 rounded-full border border-white/10" />
+                  <div className="absolute inset-8 rounded-full border border-white/10" />
+                  <div className="absolute inset-16 rounded-full border border-white/15" />
+                  <div className="absolute inset-24 rounded-full border border-brandcyan-400/30" />
+                  <span className="absolute right-16 top-1/2 -translate-y-1/2 flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-400 shadow-[0_0_16px_rgba(52,211,153,0.9)]" />
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* 7. CASE STUDIES SECTION MATCHING ATTACHMENT */}
       <section className="py-16 sm:py-20 bg-slate-50 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header Row */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 pb-8">
-            <div className="space-y-1">
-              <span className="text-xs font-extrabold uppercase tracking-wider text-brandblue-600">
+            <div className="space-y-2">
+              <span className="inline-flex px-3 py-1 rounded-full bg-white border border-slate-200 text-[10px] font-extrabold uppercase tracking-wider text-slate-500">
                 CASE STUDIES
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-navy-950 tracking-tight">
-                Real Projects. Measurable Results.
+                Proven on the ground
               </h2>
-              <p className="text-xs sm:text-sm text-slate-500 leading-relaxed max-w-2xl pt-1">
-                Explore how we&apos;ve helped businesses, communities and institutions maintain cleaner, safer and more efficient environments.
-              </p>
             </div>
             <Link
               href="/projects"
-              className="text-xs font-bold text-brandblue-600 hover:text-brandblue-700 inline-flex items-center gap-1 whitespace-nowrap transition-colors"
+              className="text-xs font-bold text-navy-800 hover:text-brandblue-700 inline-flex items-center gap-1 whitespace-nowrap transition-colors px-4 py-2 rounded-full border border-slate-200 bg-white"
             >
-              <span>View All Case Studies</span>
+              <span>View all case studies</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
-          {/* 3 Case Study Cards matching attachment */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
             {CASE_STUDIES.map((cs) => (
-              <div
+              <article
                 key={cs.id}
-                className="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
+                className="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:shadow-xl transition-all duration-300 flex flex-col"
               >
-                <div className="p-5 flex items-start justify-between gap-4">
-                  <div className="space-y-2">
-                    <h3 className="text-sm font-bold text-navy-950">
-                      {cs.title}
-                    </h3>
-                    <span className="inline-block px-2 py-0.5 rounded-full text-[10px] font-bold uppercase bg-slate-100 text-slate-600">
-                      {cs.category}
-                    </span>
-                    <div className="flex items-center gap-1 text-[11px] text-slate-400">
-                      <MapPin className="w-3 h-3 text-brandcyan-500" />
-                      <span>{cs.location}</span>
-                    </div>
-                    <p className="text-xs text-slate-600 font-medium">
-                      {cs.scope}
-                    </p>
-                    <Link
-                      href={cs.href}
-                      className="text-xs font-bold text-brandblue-600 hover:text-brandblue-700 inline-flex items-center gap-1 pt-2"
-                    >
-                      <span>Read More</span>
-                      <ArrowRight className="w-3 h-3" />
-                    </Link>
-                  </div>
-
-                  <div className="relative w-24 h-24 rounded-xl overflow-hidden bg-slate-100 flex-shrink-0">
-                    <Image
-                      src={cs.image}
-                      alt={cs.title}
-                      fill
-                      sizes="96px"
-                      className="object-cover object-center"
-                    />
-                  </div>
+                <div className="relative aspect-[16/10] w-full bg-slate-100 overflow-hidden">
+                  <Image
+                    src={cs.image}
+                    alt={cs.title}
+                    fill
+                    quality={90}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover object-center"
+                  />
+                  <span className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/95 text-[11px] font-bold text-navy-900 shadow-sm">
+                    <Building2 className="w-3 h-3 text-slate-500" />
+                    {cs.category}
+                  </span>
                 </div>
-              </div>
+                <div className="p-5 flex flex-col flex-1">
+                  <h3 className="text-base font-bold text-navy-950">{cs.title}</h3>
+                  <p className="text-sm text-slate-500 leading-relaxed mt-2 flex-1">{cs.desc}</p>
+                  <Link
+                    href={cs.href}
+                    className="text-sm font-bold text-brandblue-600 hover:text-brandblue-700 inline-flex items-center gap-1 pt-4"
+                  >
+                    <span>Read case study</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 8. BOTTOM ACTION BANNER MATCHING ATTACHMENT */}
-      <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-navy-950 via-navy-900 to-navy-950 rounded-2xl p-6 sm:p-8 border border-navy-800 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-6 text-white">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-navy-800 border border-navy-700 flex items-center justify-center text-brandcyan-400 flex-shrink-0">
-                <Calendar className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="text-base sm:text-lg font-bold text-white leading-tight">
-                  Let&apos;s Build a Cleaner, Safer and More Efficient Facility Together
-                </h3>
-                <p className="text-xs text-slate-400 mt-1">
-                  Request a free site survey and get a customised facility management solution for your property.
-                </p>
-              </div>
-            </div>
-
-            <Link
-              href="#site-survey"
-              className="px-6 py-3 rounded-xl btn-brand-primary text-xs sm:text-sm font-bold shadow-lg shadow-brandblue-500/25 hover:shadow-xl transition-all whitespace-nowrap inline-flex items-center gap-2 flex-shrink-0"
-            >
-              <span>Request a Free Site Survey</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* 9. INTERACTIVE SITE SURVEY / LEAD CAPTURE FORM */}
-      <section id="site-survey" className="py-16 sm:py-20 bg-slate-50 border-t border-slate-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center mb-10">
-            <span className="text-xs font-bold uppercase tracking-wider text-brandblue-600">
-              SITE ASSESSMENT
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-navy-950 tracking-tight mt-1">
-              Schedule Your Free Facility Survey
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-500 mt-2">
-              Our certified facility engineers conduct an on-ground audit of your housekeeping, technical MEP, and security infrastructure within 24 hours.
-            </p>
-          </div>
-          <div className="max-w-2xl mx-auto">
-            <LeadForm />
-          </div>
+      <section id="site-survey" className="relative py-16 sm:py-24 bg-[#071426] overflow-hidden">
+        <div className="absolute inset-0 bg-hero-glow opacity-70 pointer-events-none" />
+        <div className="absolute -left-24 top-10 w-72 h-72 rounded-full bg-brandcyan-400/15 blur-3xl pointer-events-none" />
+        <div className="absolute -right-16 bottom-0 w-96 h-96 rounded-full bg-brandblue-500/15 blur-3xl pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <LeadForm variant="survey" />
         </div>
       </section>
     </>

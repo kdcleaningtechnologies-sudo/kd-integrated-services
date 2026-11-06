@@ -77,7 +77,7 @@ export async function POST(req: NextRequest) {
           <tr><td style="padding: 6px 0; color: #64748b;"><strong>Source Page:</strong></td><td style="color: #64748b;">${body.sourceUrl || "Direct"}</td></tr>
         </table>
         <div style="margin-top: 20px; padding-top: 12px; border-top: 1px solid #e2e8f0; font-size: 12px; color: #94a3b8;">
-          Received at ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} IST • KD Facilities Management Services
+          Received at ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} IST • KD Integrated Services
         </div>
       </div>
     `;
@@ -99,7 +99,7 @@ export async function POST(req: NextRequest) {
         const notificationEmail =
           process.env.NOTIFICATION_EMAIL ||
           process.env.BREVO_NOTIFICATION_EMAIL ||
-          "kdfacilitiesmanagementservices@gmail.com";
+          "info@kdintegratedservices.com";
 
         await fetch("https://api.resend.com/emails", {
           method: "POST",
@@ -108,7 +108,7 @@ export async function POST(req: NextRequest) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            from: "KD Facilities Leads <leads@kdfmservices.com>",
+            from: "KD Integrated Services Leads <info@kdintegratedservices.com>",
             to: [notificationEmail],
             subject: `New Lead: ${body.name} (${body.company || body.city}) - Facility Assessment`,
             html: emailHtml,

@@ -79,7 +79,7 @@ export const packagesData = {
         "Everything in Advantage Integrated Suite",
         "Dedicated MEP technical team (HVAC, DG sets, HT/LT, Plumbing, STP)",
         "Building Management System (BMS) desk monitoring",
-        "Autonomous drone façade cleaning access (KD Cleaning Tech)",
+        "Autonomous drone façade cleaning access (KD Integrated Services)",
         "Hospital-grade ATP swab hygiene verification audits",
         "Water-fed pure water exterior wash up to 65 ft",
       ],

@@ -112,7 +112,7 @@ export const insightsArticles: InsightArticle[] = [
         sectionId: "implementation",
         heading: "6. How to Transition Your Facility in 30 Days",
         paragraphs: [
-          "A structured transition pipeline eliminates disruption for office occupants. KD Facilities Management Services employs a proven 5-step onboarding protocol: Phase 1 On-site engineering audit (Day 1-5), Phase 2 Shadow operations and inventory tagging (Day 6-15), Phase 3 Cutover with uniformed and background-verified workforce (Day 16-20), Phase 4 Digital QR code setup (Day 21-30), and Phase 5 90-day SLA performance review."
+          "A structured transition pipeline eliminates disruption for office occupants. KD Integrated Services employs a proven 5-step onboarding protocol: Phase 1 On-site engineering audit (Day 1-5), Phase 2 Shadow operations and inventory tagging (Day 6-15), Phase 3 Cutover with uniformed and background-verified workforce (Day 16-20), Phase 4 Digital QR code setup (Day 21-30), and Phase 5 90-day SLA performance review."
         ]
       }
     ],
@@ -173,7 +173,7 @@ export const insightsArticles: InsightArticle[] = [
         heading: "2. The Mandatory Police Verification Process",
         paragraphs: [
           "Every security guard deployed to a commercial facility must possess a formal Police Verification Certificate issued by the local district police commissionerate.",
-          "At KD Facilities Management Services, our security onboarding protocol mandates biometrics capture, national criminal record database check, Aadhaar address authentication, and local police verification before any guard is issued a uniform or posted to a client gate."
+          "At KD Integrated Services, our security onboarding protocol mandates biometrics capture, national criminal record database check, Aadhaar address authentication, and local police verification before any guard is issued a uniform or posted to a client gate."
         ]
       },
       {
@@ -192,7 +192,7 @@ export const insightsArticles: InsightArticle[] = [
         sectionId: "technology-integration",
         heading: "4. Tech-Enabled Guarding: RFID & QR Patrolling",
         paragraphs: [
-          "Modern security management has evolved beyond manual logbooks. KD Facilities Management Services equips on-site guarding teams with digital visitor management systems (VMS), cloud-synced vehicle entry recognition, and RFID electronic night patrol wands.",
+          "Modern security management has evolved beyond manual logbooks. KD Integrated Services equips on-site guarding teams with digital visitor management systems (VMS), cloud-synced vehicle entry recognition, and RFID electronic night patrol wands.",
           "Site supervisors must scan geo-tagged checkpoints across basements, stairwells, and perimeter fences during designated night patrol rounds, providing clients with timestamped audit trails accessible via an online portal."
         ]
       },
@@ -268,7 +268,7 @@ export const insightsArticles: InsightArticle[] = [
         sectionId: "30-minute-loop",
         heading: "2. The 30-Minute Restroom Turnaround Cycle",
         paragraphs: [
-          "KD Facilities Management Services enforces a structured 30-minute custodial cycle across Grade-A office buildings in Gurugram, Delhi, and Noida:",
+          "KD Integrated Services enforces a structured 30-minute custodial cycle across Grade-A office buildings in Gurugram, Delhi, and Noida:",
           "Every 30 minutes during peak operational hours (09:00 to 19:00), a designated attendant checks vanity counters, restocks tissue rolls, cleans faucet watermarks with specialized anti-scaling solution, dry-mops floor tiles, and verifies automated air freshener cartridges."
         ]
       },
@@ -418,7 +418,7 @@ export const insightsArticles: InsightArticle[] = [
     publishedDate: "2026-02-10",
     modifiedDate: "2026-02-25",
     author: "Façade Robotics Lead",
-    authorRole: "KD Cleaning Technologies Engineering Division",
+    authorRole: "KD Integrated Services Engineering Division",
     excerpt: "Traditional high-rise window washing using manual cradles and rope-access abseiling carries immense safety hazards, pedestrian risk, and slow turnaround. Discover how autonomous cleaning drones are revolutionizing exterior building maintenance across Delhi NCR.",
     featuredImage: "/images/operations-hero.jpg",
     tableOfContents: [
@@ -449,7 +449,7 @@ export const insightsArticles: InsightArticle[] = [
         sectionId: "drone-technology",
         heading: "3. How Autonomous Façade Cleaning Drones Work",
         paragraphs: [
-          "Through our specialized engineering division — KD Cleaning Technologies — we deploy custom-engineered heavy-lift industrial quadcopters equipped with high-pressure fluid delivery tethers.",
+          "Through our specialized engineering division — KD Integrated Services — we deploy custom-engineered heavy-lift industrial quadcopters equipped with high-pressure fluid delivery tethers.",
           "The drone operates untethered from human scaffolding: an operator on the ground guides the drone along programmed flight paths using LiDAR obstacle avoidance sensors and ultrasonic distance sensors to maintain a constant 1.2-meter standoff distance from the building glass.",
           "High-pressure jets spray heated pure water at up to 150 bar, shearing off grime, bird droppings, and industrial pollutants in seconds."
         ],

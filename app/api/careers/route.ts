@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
           <tr><td style="padding: 6px 0; color: #64748b;"><strong>Notes / CV summary:</strong></td><td style="color: #0f172a;">${body.notes || "None"}</td></tr>
         </table>
         <div style="margin-top: 20px; padding-top: 12px; border-top: 1px solid #e2e8f0; font-size: 12px; color: #94a3b8;">
-          Received at ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} IST • KD Facilities Management Services
+          Received at ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })} IST • KD Integrated Services
         </div>
       </div>
     `;

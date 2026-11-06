@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Industrial Security Services Manesar",
   ],
   ...socialMetadata("/services/security", {
-    title: "Security & Guarding Services in Gurgaon & NCR | KD Facilities Management Services",
+    title: "Security & Guarding Services in Gurgaon & NCR | KD Integrated Services",
     description: "PASARA-certified 24/7 manned security guards, RFID night patrolling, and digital gate management.",
   }),
 };

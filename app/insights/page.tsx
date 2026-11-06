@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "Drone Facade Cleaning India",
   ],
   ...socialMetadata("/insights", {
-    title: "Facility Management Insights & Knowledge Hub | KD Facilities Management Services",
+    title: "Facility Management Insights & Knowledge Hub | KD Integrated Services",
     description:
       "Expert operational guides, SLA benchmarks, and compliance checklists for corporate facility directors and administration heads in Delhi NCR.",
   }),
@@ -122,7 +122,7 @@ export default function InsightsHubPage() {
                     <div className="relative aspect-[16/9] w-full overflow-hidden bg-navy-950">
                       <Image
                         src={article.featuredImage}
-                        alt={`${article.title} - KD Facilities Management Services guide`}
+                        alt={`${article.title} - KD Integrated Services guide`}
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Commercial Disinfection Services Delhi NCR",
   ],
   ...socialMetadata("/services/specialised", {
-    title: "Specialised Cleaning & Drone Façade Washing in Gurgaon | KD Facilities Management Services",
+    title: "Specialised Cleaning & Drone Façade Washing in Gurgaon | KD Integrated Services",
     description: "High-tech façade cleaning drones, diamond marble polishing, and commercial pest management.",
   }),
 };
@@ -122,7 +122,7 @@ export default function SpecialisedServicesPage() {
                   href="/technology"
                   className="px-5 py-3 rounded-xl bg-navy-900/90 hover:bg-navy-800 text-white font-semibold text-xs border border-slate-700/80 hover:border-brandcyan-400/40 transition-colors shadow-md"
                 >
-                  KD Cleaning Technologies Fleet
+                  KD Integrated Services Fleet
                 </Link>
                 <a
                   href={companyInfo.technologyArmUrl}

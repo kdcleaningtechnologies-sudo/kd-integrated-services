@@ -1,6 +1,6 @@
 export const partnerData = {
   badge: "Channel Partner Program",
-  headline: "Partner with KD Facilities Management Services — Earn Recurring Referral Rewards",
+  headline: "Partner with KD Integrated Services — Earn Recurring Referral Rewards",
   subheadline: "Are you a commercial real-estate broker, property manager, leasing executive, or RWA committee member? Introduce enterprise facility contracts to KD and benefit from an ethical, rewarding partnership.",
   benefits: [
     {

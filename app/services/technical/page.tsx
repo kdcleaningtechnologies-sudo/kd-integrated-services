@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Commercial MEP Maintenance Delhi NCR",
   ],
   ...socialMetadata("/services/technical", {
-    title: "Engineering & Technical MEP Services in Gurgaon & NCR | KD Facilities Management Services",
+    title: "Engineering & Technical MEP Services in Gurgaon & NCR | KD Integrated Services",
     description: "Planned preventive maintenance (PPM) for commercial HVAC, 11kV electrical substations, and automated DG backups.",
   }),
 };

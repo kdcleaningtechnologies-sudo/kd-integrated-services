@@ -102,8 +102,8 @@ export default function PartnerPage() {
               </h3>
               <p className="text-xs text-slate-600 mt-1">
                 Enter your details below to receive our formal partner MoU and commercial commission tier sheet, or reach our alliances desk directly at{" "}
-                <a href="mailto:kdfacilitiesmanagementservices@gmail.com" className="text-brandgreen-700 font-bold hover:underline">
-                  kdfacilitiesmanagementservices@gmail.com
+                <a href="mailto:info@kdintegratedservices.com" className="text-brandgreen-700 font-bold hover:underline">
+                  info@kdintegratedservices.com
                 </a>.
               </p>
             </div>

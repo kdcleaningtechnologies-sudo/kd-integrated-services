@@ -200,18 +200,16 @@ export const AdminSidebar: React.FC<AdminSidebarProps> = ({
           </div>
           <span className="text-[10px] text-slate-500">Live ↗</span>
         </a>
-        <a
-          href="https://kdcleaningtechnologies.com/"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="/technology"
           className="flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs text-slate-400 hover:bg-navy-900 hover:text-brandgreen-400 transition-colors"
         >
           <div className="flex items-center gap-3">
             <Cpu className="w-4 h-4 text-slate-500" />
-            <span>KD Cleaning Tech</span>
+            <span>Tech Division</span>
           </div>
-          <span className="text-[10px] text-slate-500">Portal ↗</span>
-        </a>
+          <span className="text-[10px] text-slate-500">Live ↗</span>
+        </Link>
       </div>
 
       {/* User Session Footer */}

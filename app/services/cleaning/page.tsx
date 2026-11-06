@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     "Industrial Cleaning Services NCR",
   ],
   ...socialMetadata("/services/cleaning", {
-    title: "Cleaning & Housekeeping Services in Gurgaon & NCR | KD Facilities Management Services",
+    title: "Cleaning & Housekeeping Services in Gurgaon & NCR | KD Integrated Services",
     description: "Professional corporate housekeeping, commercial deep cleaning, and mechanized janitorial services for Grade-A properties.",
   }),
 };
