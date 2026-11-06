@@ -31,10 +31,15 @@ export const Footer: React.FC = () => {
             </span>
           ))}
         </div>
-        <div className="md:hidden flex items-center justify-center h-full">
-          <span className="font-black uppercase text-[42vw] leading-none tracking-[0.08em] text-white/[0.06]">
-            KDIS
-          </span>
+        <div className="md:hidden flex h-full flex-col items-center justify-evenly py-2">
+          {["K", "D", "I", "S"].map((letter) => (
+            <span
+              key={`m-${letter}`}
+              className="block font-black text-white/[0.10] text-[36vw] leading-[0.62] text-center"
+            >
+              {letter}
+            </span>
+          ))}
         </div>
       </div>
 
